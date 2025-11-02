@@ -1,0 +1,9 @@
+import { SignIn } from '@clerk/nextjs';
+
+export default function SiginInPage() {
+  return (
+    <main className="flex h-screen w-full items-center justify-center">
+      <SignIn redirectUrl={process.env.NEXT_PUBLIC_CLERK_SIGN_IN_FORCE_REDIRECT_URL}/>
+    </main>
+  );
+}
